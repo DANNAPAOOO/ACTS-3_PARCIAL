@@ -2,13 +2,13 @@
 #include <vector>
 
 int main() {
-    // Inicializamos el primer vector
+   
     std::cout << "Digite el tamaño del vector 1: ";
     int t;
     std::cin >> t;
     std::vector<int> vector1(t);
 
-    // Leemos los elementos del vector
+   
     for (int i = 0; i < t; i++) {
         std::cout << "Ingrese el elemento " << i + 1 << ": ";
         int num;
@@ -16,13 +16,13 @@ int main() {
         vector1[i] = num;
     }
 
-    // Inicializamos el segundo vector
+    
     std::cout << "Digite el tamaño del vector 2: ";
     int s;
     std::cin >> s;
     std::vector<int> vector2(s);
 
-    // Leemos los elementos del vector
+ 
     for (int i = 0; i < s; i++) {
         std::cout << "Ingrese el elemento " << i + 1 << ": ";
         int num;
@@ -30,10 +30,10 @@ int main() {
         vector2[i] = num;
     }
 
-    // Inicializamos el vector 3 con el resultado de la suma
+
     std::vector<int> vector3(t + s);
 
-    // Realizamos la suma
+    
     for (int i = 0; i < t; i++) {
         vector3[i] = vector1[i];
     }
@@ -42,7 +42,7 @@ int main() {
         vector3[t + i] = vector2[i];
     }
 
-    // Mostramos el resultado
+    
     std::cout << "Resultado final: ";
     for (int i = 0; i < t + s; i++) {
         std::cout << vector3[i] << " ";
