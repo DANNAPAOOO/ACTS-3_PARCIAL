@@ -14,7 +14,7 @@ int main() {
         cout<<"Introduce tu contraseña: ";
         cin>>contrasena;
 
-        if (strcmp(nombre, "OSVALDO") == 0 && strcmp(contrasena, "2BMPG") == 0) {
+        if (strcmp(nombre, "DANNA") == 0 && strcmp(contrasena, "2BMPG") == 0) {
             cout<<"Bienvenido al sistema.\n";
             break;
         } else {
